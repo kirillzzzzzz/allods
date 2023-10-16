@@ -1,0 +1,530 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+.container {
+  overflow: hidden;
+  max-width: 1920px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0px 0px;
+}
+
+.wrapper {
+  font-family: "Roboto";
+  font-size: 42px;
+}
+
+.header {
+  background: url("/img/glow/glow_bottom.png") bottom/0 0 no-repeat, url("/img/Hue_Saturation 5 1.jpg") 0 0 no-repeat;
+  background-size: contain;
+  position: relative;
+}
+.header__logo {
+  position: absolute;
+  max-width: 20%;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 500;
+}
+.header__logo img {
+  width: 100%;
+}
+.header__pers-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.header__product {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0;
+}
+.header__product:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("/img/glow/glow_center.png") center/0 0 no-repeat;
+  background-size: contain;
+  mix-blend-mode: screen;
+}
+
+.pers-image__item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  position: relative;
+  padding-top: 46.5%;
+}
+.pers-image__item:first-child:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: url("/img/shadow/shadow_left.png") left/0 0 no-repeat;
+  background-size: contain;
+  mix-blend-mode: multiply;
+}
+.pers-image__item:first-child .pers-image__img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: url("/img/MafiaCostume_2022 2.png") -4% 0/contain no-repeat;
+}
+.pers-image__item:last-child:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background: url("/img/shadow/shadow_right.png") right/0 0 no-repeat;
+  background-size: contain;
+  mix-blend-mode: multiply;
+}
+.pers-image__item:last-child .pers-image__img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: url("/img/MafiaCostume_2022 3.png") 97% 0/contain no-repeat;
+}
+.pers-image:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  background: url("/img/shadow/shadow_bottom.png") bottom/0 0 no-repeat;
+  background-size: contain;
+  mix-blend-mode: multiply;
+}
+
+.header-product__image {
+  position: absolute;
+  top: 26%;
+  left: 29%;
+  width: 100%;
+  padding-top: 27%;
+  background: url("/img/boxes.png") 0 0/contain no-repeat;
+}
+.header-product__text {
+  width: 100%;
+  text-align: center;
+  color: #FFFFFF;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+.header-product__title {
+  text-transform: uppercase;
+  font-family: "Roboto Condensed";
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 117.1904761905%;
+  margin-bottom: 1%;
+}
+@media (max-width: 1920px) {
+  .header-product__title {
+    font-size: 2.2vw;
+  }
+}
+@media (max-width: 991.98px) {
+  .header-product__title {
+    font-size: 3.2vw;
+    margin-bottom: 0.5%;
+  }
+}
+.header-product__description {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 117.2%;
+  margin-bottom: 3%;
+}
+@media (max-width: 1920px) {
+  .header-product__description {
+    font-size: 1.05vw;
+  }
+}
+@media (max-width: 991.98px) {
+  .header-product__description {
+    font-size: 1.5vw;
+    margin-bottom: 1.5%;
+  }
+}
+@media (max-width: 767.98px) {
+  .header-product__description {
+    font-size: 1.8vw;
+  }
+}
+
+.pack-card {
+  padding: 0px 15px;
+  background: url("/img/glow/glow_bottom.png") bottom/contain no-repeat, url("/img/background_wall.jpg") 0 0/cover no-repeat;
+}
+@media (max-width: 600px) {
+  .pack-card {
+    padding: 0px 15px 40px 15px;
+  }
+}
+.pack-card__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media (max-width: 1125px) {
+  .pack-card__items {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+.pack-card__item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 50%;
+          flex: 1 0 50%;
+}
+.card-image {
+  padding-top: 55.2%;
+  position: relative;
+}
+.card-image:after {
+  content: "";
+  position: absolute;
+  width: 71%;
+  height: 71%;
+  top: 16%;
+  left: 22%;
+  border-radius: 686px;
+  border: 1px solid #000;
+  opacity: 0.2;
+  background: #416DF4;
+  mix-blend-mode: lighten;
+  -webkit-filter: blur(100px);
+          filter: blur(100px);
+}
+@media (max-width: 1125px) {
+  .card-image:after {
+    top: 16%;
+    left: 19%;
+  }
+}
+.card-image__img {
+  z-index: 500;
+  position: absolute;
+  width: 82%;
+  height: 82%;
+  top: 4%;
+  left: 1%;
+  background: url("/img/Vito_1.png") right/contain no-repeat;
+}
+@media (max-width: 1125px) {
+  .card-image__img {
+    width: 100%;
+    height: 100%;
+    top: 4%;
+    left: -35%;
+  }
+}
+
+@media (min-width: 1125px) {
+  .card-properties {
+    max-width: 632px;
+  }
+}
+.card-properties__title {
+  text-transform: uppercase;
+  color: #416DF4;
+  font-family: "Roboto Condensed";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 58px 0px 41px 0px;
+}
+@media (max-width: 1920px) {
+  .card-properties__title {
+    font-size: 2vw;
+  }
+}
+@media (max-width: 1125px) {
+  .card-properties__title {
+    font-size: 2.2vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+@media (max-width: 991.98px) {
+  .card-properties__title {
+    font-size: 3.2vw;
+  }
+}
+@media (max-width: 600px) {
+  .card-properties__title {
+    font-size: 5.2vw;
+  }
+}
+.card-properties__purchase {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media (max-width: 1125px) {
+  .card-properties__purchase {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+@media (max-width: 600px) {
+  .card-properties__purchase {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.card-table__item {
+  margin-bottom: 0.5px;
+}
+.card-table__item:first-child .card-table__row {
+  padding: 0;
+  margin: 0;
+}
+@media (max-width: 1125px) {
+  .card-table__item:first-child .card-table__row {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+  }
+}
+.card-table__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px;
+}
+.card-table__row-title-wrap {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
+  color: #671D00;
+  font-family: "Roboto";
+  font-size: 12px;
+  font-weight: 400;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+@media (max-width: 1125px) {
+  .card-table__row-title-wrap {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 52%;
+            flex: 0 0 52%;
+  }
+}
+@media (max-width: 600px) {
+  .card-table__row-title-wrap {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 52%;
+            flex: 1 0 52%;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+  }
+}
+.card-table__row-title-item {
+  text-align: center;
+  margin-bottom: 9px;
+  border: 1px solid rgba(103, 29, 0, 0.48);
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 140px;
+          flex: 0 0 140px;
+  padding: 4px;
+}
+.card-table__row-title-item:last-child {
+  margin-left: 11px;
+}
+@media (max-width: 1125px) {
+  .card-table__row-title-item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 140px;
+            flex: 0 0 140px;
+  }
+}
+.card-row {
+  border-radius: 1px;
+  border: 1px solid rgba(103, 29, 0, 0.48);
+  background: rgba(0, 0, 0, 0.55);
+  color: #FFF;
+  font-weight: 400;
+  font-size: 16px;
+}
+@media (max-width: 600px) {
+  .card-row {
+    font-size: 12px;
+  }
+}
+.card-row__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.card-row__item:first-child {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 81px;
+          flex: 1 1 81px;
+}
+@media (max-width: 1125px) {
+  .card-row__item:first-child {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 81px;
+            flex: 0 1 81px;
+  }
+}
+@media (max-width: 600px) {
+  .card-row__item:first-child {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 40px;
+            flex: 0 0 40px;
+  }
+}
+.card-row__item:nth-child(2) {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 241px;
+          flex: 1 1 241px;
+}
+.card-row__item:nth-child(3) {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 145.5px;
+          flex: 1 1 145.5px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.card-row__item:nth-child(4) {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 145.5px;
+          flex: 1 1 145.5px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.card-row__icon {
+  width: 64px;
+  height: 64px;
+}
+@media (max-width: 600px) {
+  .card-row__icon {
+    width: 32px;
+    height: 32px;
+  }
+}
+.card-row__icon img {
+  width: 100%;
+  height: 100%;
+}
+.card-row__name {
+  width: 160px;
+}
+.card-row__value-subs {
+  text-align: center;
+}
+
+.card-purchase {
+  color: #FFF;
+}
+.card-purchase__image {
+  width: 250px;
+  height: 320px;
+  background: url("../../img/box.png") 0 0 no-repeat;
+}
+@media (max-width: 600px) {
+  .card-purchase__image {
+    width: 225px;
+  }
+}
+.card-purchase__price {
+  margin: 0px 0px 52px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+}
+@media (max-width: 600px) {
+  .card-purchase__price {
+    margin: 0px auto;
+  }
+}
+
+.card-price__pricetag {
+  margin-bottom: 15px;
+  color: #FFF;
+  font-size: 50px;
+  font-weight: 400;
+}
+@media (max-width: 1920px) {
+  .card-price__pricetag {
+    font-size: 50px;
+  }
+}
+.card-price__btn {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 14px 36px 10px 36px;
+  border-radius: 7px;
+  background: #FCFF00;
+}
+.card-price__btn span {
+  text-transform: uppercase;
+  color: #000;
+  font-size: 16px;
+  font-weight: 400;
+}
